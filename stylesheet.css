@@ -1,0 +1,406 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+} 
+a {
+    color: #326891;
+    text-decoration: underline;
+}
+header {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    background: #fff;
+    z-index: 1000;
+}
+#header-start-container img {
+    width: 15px;
+    margin: 0 13px;
+}
+#header-start-container:first-child {
+    margin-left: 10px;
+}
+header p {
+    text-align: center;
+    background: transparent;
+    display: inline-block;
+    font-size: 14.25px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 0 13px;
+}
+header > img {
+    width: 195px;
+}
+header button {
+    padding: 11px 12px 8px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    background-color: rgb(86, 123, 149);
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid rgb(50, 104, 145);
+}
+header button:last-of-type {
+    margin-right: 18px;
+    margin-left: 4px;
+}
+article {
+    position: relative;
+    padding-top: 100px;
+    width: 600px;
+    margin: 0 auto;
+}
+figcaption {
+     color: #666;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 0.875rem;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+}
+.main-text {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-weight: 100;
+}
+h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #121212;
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+#main-img {
+    width: 945px;
+    margin-left: -25%;
+}
+#main-img ~ figcaption {
+    color: #666;
+    margin-left: -25%;
+    width: 700px;
+}
+#friedman {
+    color: #888;
+    font-size: 14px;
+}
+article > p {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin: 25px 0;
+}
+#article-date {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.8125rem;
+}
+#date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#icon-box {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    width: 27px;
+    margin: 0 6px;
+}
+#save-icon {
+    width: 17px;
+}
+#comment-icon {
+    width: 38px;
+    margin-right: 0;
+}
+#first-section {
+    margin-top: 25px;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 20px 0;
+}
+aside {
+    position: absolute;
+    left: -172.5px;
+    right: -172.5px;
+    height: auto;
+}
+h3 {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+aside > p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1rem;
+}
+#inflation-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 945px;
+    align-items: baseline;
+}
+aside img {
+    width: 227px;
+}
+aside figcaption {
+    font-family: Helvetica-light;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    width: 220px;
+}
+aside figcaption span {
+    font-weight: bold;
+    font-size: 11px;
+}
+aside figure {
+    margin: 0 5px;
+}
+aside figure:first-of-type {
+    margin-left: 0;
+}
+aside figure:last-of-type {
+    margin-right: 0;
+}
+aside hr {
+    width: 70px;
+    position: absolute;
+    left: 0;
+    color: #000;
+}
+#aside-creators {
+    color: #000;
+    margin-top: 30px;
+    font-family: Helvetica;
+}
+aside + p {
+    padding-top: 750px;
+}
+iframe + p {
+    color: #666;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    font-size: 0.875rem;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    width: 80%;
+}
+iframe + p span {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+img[src*=cosmos] {
+    margin-top: 25px;
+    width: 100%;
+}
+#richter {
+    font-size: 13px;
+}
+#section-three p:last-of-type {
+    margin-top: 25px;
+}
+#print {
+    font-family: Helvetica-light;
+    font-size: 11px;
+    line-height: 1rem;
+    color: rgb(102, 102, 102);
+    margin: 25px 0;
+}
+#end-article-container {
+    display: flex;
+    justify-content: space-between;
+}
+#end-article-container button {
+    background-color: rgb(86, 123, 149);
+    color: white;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.5rem;
+    border: 1px solid rgb(50, 104, 145);
+    border-radius: 3px;
+    width: 330px;
+    padding: 0;
+}
+#end-article-links-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+#more-in-space {
+    flex: 8;
+}
+#link-grid-one {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#more-in-space figure {
+    width: 275px;
+    margin-bottom: 20px;
+}
+.link-img {
+    width: 275px;
+}
+.linkcap {
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.fig-date {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+#most-popular {
+    flex: 3;
+    height: 100px;
+    margin-left: 25px;
+}
+#more-popular-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h3 {
+    color: rgb(18, 18, 18);
+}
+#most-popular hr {
+    margin: 15px 0;
+}
+footer {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+footer img {
+    width: 184px;
+}
+#back-to-home {
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px double gray;
+    padding-top: 10px;
+}
+#back-to-home p {
+    color: rgb(86, 123, 149);
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 11px;
+}
+#footer-links-container {
+    display: flex;
+    margin-top: 25px;
+    height: 370px;
+}
+#main-links-list {
+    flex: 9;
+    display: flex;
+    justify-content: space-evenly;
+    border-right: 1px solid gray;
+}
+#subsribe-container {
+    flex: 2;
+    padding-left: 10px;
+}
+.list {
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 24px;
+}
+h4 {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    height: 25px;
+    line-height: 15px;
+}
+.bold-subscribe {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+}
+.small-subscribe {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 25px;
+}
+#bottom-footer {
+    display: flex;
+    padding: 10px 25px;
+    justify-content: space-evenly;
+    color: #666;
+    font-size: 12px;
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    height: 50px;
+}
